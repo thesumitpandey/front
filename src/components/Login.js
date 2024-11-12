@@ -21,13 +21,15 @@ function FormGroupExample(props) {
   const handle = async (e) => {
     e.preventDefault(); 
 
-    
+    props.set(10);
     const success = await Log({ username: t.username, password: t.password });
 
   
     if (success === true) {
+      props.set(70);
       console.log("Login successful!");
       getall();
+      props.set(100);
       navigate('/Home'); 
     } else {
       console.log("Login failed.");
