@@ -27,7 +27,7 @@ const [progress, set] = useState(0);
        
         <Notestate>
           <HashRouter>
-              <LoadingBar color='red' progress={progress} />
+              
            
           
             <div className="container">
