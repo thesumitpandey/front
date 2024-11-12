@@ -19,19 +19,20 @@ import Explore from"./components/explore"
 
 
 function App() {
-  
+const [progress, set] = useState(0);
+ 
   return (
     <div>
 
        
         <Notestate>
           <HashRouter>
-      
+              <LoadingBar color='red' progress={progress} />
            
           
             <div className="container">
               <Routes>
-                <Route exact path='/' element={<Login/>} />
+                <Route exact path='/' element={<Login set={set}/>} />
              
                 <Route exact path='/Home' element={<Home/>} />
                
