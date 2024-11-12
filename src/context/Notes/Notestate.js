@@ -4,7 +4,7 @@ import Notecontext from './Notecontext';
 import axios from "axios";
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
+  const host = "https://back-7nre.onrender.com";
 
   const [note, setNote] = useState([]);
   const token = localStorage.getItem('token');
