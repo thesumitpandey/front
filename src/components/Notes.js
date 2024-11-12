@@ -132,7 +132,7 @@ return (
 <div className="row justify-content-center text-center">
 <h2 className="text-center my-4 s" >
   @{namel}-
-Your Recipes
+Your Blogs
 </h2>
 
 
